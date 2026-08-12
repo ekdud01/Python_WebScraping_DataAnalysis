@@ -33,3 +33,11 @@ mysql -u python -p
 
     # table 목록 확인하기 
     show tables;
+
+    # songs 테이블의 구조 확인하기 
+    desc songs;
+
+    # 특정 정보 출력하기 
+    select 곡명 from songs;
+    select 곡명,장르 from songs where 가수 = 'AKMU (악뮤)';
+    select id,title,singer,album from songs100 where album like '%OST%';
